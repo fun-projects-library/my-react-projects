@@ -1,0 +1,12 @@
+.parent {
+    background-color: coral;
+}
+
+.child {
+    color: rgb(19, 160, 15);
+}
+
+
+#title {
+    color:yellow;
+}
