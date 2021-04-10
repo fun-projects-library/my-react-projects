@@ -7,8 +7,12 @@ export class Name extends React.Component {
     
   }
   
-  render() {
+  
+  
 
+
+  render() {
+    
     return (
       <div>
         <h1>Hey, my name is {this.props.name}!</h1>
