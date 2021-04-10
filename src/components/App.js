@@ -1,14 +1,26 @@
 import React from 'react';
-import ColorPicker from './ColorPicker';
+import { Select } from './Select';
+import { Name } from './Name';
 
+export class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      name: ""
+    }
+  }
 
+  changeName=(param)=>{
+    this.setState({name: param})
+  }
 
-class App extends React.Component {
   render() {
     return (
-      <ColorPicker />
+      <div>
+        <Select method={this.changeName}/>
+        <Name name={this.state.name}/>
+      </div>
     );
   }
 }
 
-export default App;
